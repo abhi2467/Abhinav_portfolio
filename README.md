@@ -26,19 +26,6 @@ I am an MCA student interested in web application development and building respo
 - Resume download and online viewing links
 - Contact form integration using EmailJS
 
-## Projects Showcased
-
-| Project | Description | Technologies |
-|---|---|---|
-| Sanatan Heritage Portal | A web portal for exploring Hindu deities, scriptures, and holy books, with category navigation, search, and a paginated reader. | PHP, MySQL, HTML, CSS, JavaScript |
-| TourMate — AI Trip Planner | An AI-based personalized tourism recommendation and trip-planning project focused on itineraries, destinations, and budgets. | Python, Flask, AI |
-| LinkHub | A project showcased in the portfolio. | See project details in the website |
-| Bharat Live | A project showcased in the portfolio. | See project details in the website |
-| Balaji Sweets | A project showcased in the portfolio. | See project details in the website |
-| TaskFlow | A project showcased in the portfolio. | See project details in the website |
-
-Project availability and implementation status may change as development continues.
-
 ## Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5
