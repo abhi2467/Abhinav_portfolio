@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhinav Chauhan — MCA Student &amp; Web Application Developer</title>
+<meta name="description" content="Abhinav Chauhan — MCA student and web application developer building responsive, database-driven apps with PHP, Python and JavaScript. Explore projects, skills, certificates and get in touch.">
+<meta name="theme-color" content="#f5f4ef">
+
+<meta property="og:title" content="Abhinav Chauhan — MCA Student &amp; Web Application Developer">
+<meta property="og:description" content="Building clean, responsive web applications. Explore projects like Sanatan Heritage Portal and TourMate AI Trip Planner.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="static/assets/og-cover.jpg">
+
+<!-- Theme init (runs before paint to avoid a flash of the wrong theme) -->
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('abhinav-theme');
+      var theme = stored || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="static/assets/favicon.svg">
+<link rel="icon" type="image/png" href="static/assets/favicon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">abhinav</a>
+
+    <div class="nav-links d-none d-lg-flex">
+      <a href="#home" class="navlink">Home</a>
+      <a href="#projects" class="navlink">Projects</a>
+      <a href="#certificates" class="navlink">Certificates</a>
+      <a href="#about" class="navlink">About</a>
+      <a href="#contact" class="navlink">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" class="btn-ghost nav-resume" target="_blank" rel="noreferrer" download>
+        <i class="fa-solid fa-download" aria-hidden="true"></i> Resume
+      </a>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to light mode" title="Switch to light mode">
+        <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+      </button>
+
+      <a href="#contact" class="btn-accent nav-cta">
+        <i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Let's talk
+      </a>
+
+      <button class="burger" id="burgerBtn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobilePanel">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" target="_blank" rel="noreferrer" download>
+      <i class="fa-solid fa-download" aria-hidden="true"></i> Download resume
+    </a>
+    <button class="mobile-theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to light mode">
+      <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+      <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+      <span>Switch theme</span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse"></span> Available for internships &amp; collaborations</div>
+
+        <h1>Designing ideas.<br>Building <span class="grad">the web.</span></h1>
+
+        <p class="hero-sub">I'm Abhinav — an MCA student at Teerthanker Mahaveer University. Most weeks I'm somewhere between a PHP backend and a Python script, figuring out how a real idea turns into something people can actually click through.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-accent">
+            Explore projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" class="btn-ghost" target="_blank" rel="noreferrer" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download resume
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Get in touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong data-count="5" data-suffix="+">5+</strong><span>Projects built</span></div>
+          <div><strong data-count="7.96">7.96</strong><span>BCA CGPA</span></div>
+          <div><strong data-count="2">2</strong><span>Certifications</span></div>
+        </div>
+      </div>
+
+      <div class="code-window reveal" aria-hidden="true">
+        <div class="code-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-file">abhinav.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">abhinav</span> <span class="c-pun">=</span> <span class="c-pun">{</span>
+  <span class="c-prop">role</span><span class="c-pun">:</span> <span class="c-str">"MCA Student &amp; Web Dev"</span><span class="c-pun">,</span>
+  <span class="c-prop">stack</span><span class="c-pun">:</span> <span class="c-pun">[</span><span class="c-str">"PHP"</span><span class="c-pun">,</span> <span class="c-str">"Python"</span><span class="c-pun">,</span> <span class="c-str">"JS"</span><span class="c-pun">],</span>
+  <span class="c-prop">building</span><span class="c-pun">:</span> <span class="c-str">"TourMate — AI Trip Planner"</span><span class="c-pun">,</span>
+  <span class="c-prop">openTo</span><span class="c-pun">:</span> <span class="c-str">"internships &amp; collabs"</span><span class="c-pun">,</span>
+  <span class="c-fn">sayHi</span><span class="c-pun">:</span> <span class="c-pun">()</span> <span class="c-pun">=&gt;</span> <span class="c-str">"Let's build something!"</span>
+<span class="c-pun">};</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>PHP</span><span>Python</span><span>Java</span><span>MySQL</span><span>SQL</span><span>Flask</span><span>Git</span><span>GitHub</span>
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>PHP</span><span>Python</span><span>Java</span><span>MySQL</span><span>SQL</span><span>Flask</span><span>Git</span><span>GitHub</span>
+    </div>
+  </div>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="section-head reveal">
+      <h2>Selected work</h2>
+      <p>A closer look at the projects I'm most proud of — built end-to-end with real data, real users and real constraints.</p>
+    </div>
+
+    <div class="featured-grid">
+      <!-- Featured 1 — Sanatan -->
+      <article class="feature-card reveal">
+        <div class="preview p1">
+          <img src="static/assets/projects/sanatan.jpg"
+               alt="Sanatan Heritage Portal">
+          <span class="preview-title">Sanatan Heritage Portal</span>
+          <div class="preview-links">
+            <a class="icon-link" href="https://github.com/abhi2467" target="_blank" rel="noopener" title="GitHub repository" aria-label="GitHub repository — Sanatan Heritage Portal">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-top">
+          <span class="status-pill"><span class="dot-mini"></span> In development</span>
+        </div>
+        <p>A full-stack web portal for exploring Hindu deities, scriptures and holy books, with category navigation, search and a paginated reader built for comfortable online reading.</p>
+        <ul class="features">
+          <li>Categorised browsing and search across deities, scriptures &amp; books</li>
+          <li>Paginated reader designed for long-form reading</li>
+          <li>Fully responsive interface across mobile, tablet and desktop</li>
+        </ul>
+        <div><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </article>
+
+      <!-- Featured 2 — TourMate -->
+      <article class="feature-card reveal">
+        <div class="preview p2">
+          <img src="static/assets/projects/tourmate.jpg"
+               alt="TourMate AI Trip Planner">
+          <span class="preview-title">TourMate — AI Trip Planner</span>
+          <div class="preview-links">
+            <a class="icon-link" href="https://github.com/abhi2467" target="_blank" rel="noopener" title="GitHub repository" aria-label="GitHub repository — TourMate AI Trip Planner">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-top">
+          <span class="status-pill"><span class="dot-mini"></span> In development</span>
+        </div>
+        <p>An AI-based personalized tourism recommendation and trip-planning system focused on tailored itineraries, destinations and budgets.</p>
+        <ul class="features">
+          <li>Personalised itineraries generated from destination, duration &amp; budget</li>
+          <li>Recommendation engine for destinations and activities</li>
+          <li>Designed as an MCA major project — Flask backend + responsive UI</li>
+        </ul>
+        <div><span class="tag tag-accent">Python</span><span class="tag tag-accent">Flask</span><span class="tag">AI</span></div>
+      </article>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:78px;">
+      <h2>All projects</h2>
+      <p>Experiments, coursework and real builds — filter by what you're curious about.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+      <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+      <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+      <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">Desktop App</button>
+    </div>
+
+    <div class="row g-4" id="projectGrid">
+
+      <!-- Sanatan -->
+      <div class="col-md-6" data-tags="fullstack">
+        <div class="card reveal">
+          <div class="preview p1">
+            <img src="static/assets/projects/sanatan.jpg"
+                 alt="Sanatan Heritage Portal" loading="lazy">
+            <span class="preview-title">Sanatan Heritage Portal</span>
+            <div class="preview-links">
+              <a class="icon-link" href="https://github.com/abhi2467" target="_blank" rel="noopener" title="GitHub repository">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-top"><span class="status-pill"><span class="dot-mini"></span> In development</span></div>
+          <p>Centralized, PHP/MySQL-driven access to Hindu deity profiles, scriptures and holy books, with categorized browsing, search and filtering, and a responsive interface across devices.</p>
+          <div><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+      </div>
+
+      <!-- TourMate -->
+      <div class="col-md-6" data-tags="ai">
+        <div class="card reveal">
+          <div class="preview p2">
+            <img src="static/assets/projects/tourmate.jpg"
+                 alt="TourMate AI Trip Planner" loading="lazy">
+            <span class="preview-title">TourMate — AI Trip Planner</span>
+            <div class="preview-links">
+              <a class="icon-link" href="https://github.com/abhi2467" target="_blank" rel="noopener" title="GitHub repository">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-top"><span class="status-pill"><span class="dot-mini"></span> In development</span></div>
+          <p>A trip-planning system that generates personalized itineraries based on destination, duration and budget, designed as an MCA major project.</p>
+          <div><span class="tag tag-accent">Python</span><span class="tag tag-accent">Flask</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </div>
+      </div>
+
+      <!-- LinkHub -->
+      <div class="col-md-6" data-tags="web">
+        <div class="card reveal">
+          <div class="preview p3">
+            <img src="static/assets/projects/linkhub.jpg"
+                 alt="LinkHub" loading="lazy">
+            <span class="preview-title">LinkHub</span>
+            <div class="preview-links">
+              <a class="icon-link" href="https://linkdash.netlify.app/" target="_blank" rel="noopener" title="Live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="https://github.com/abhi2467/linkhub" target="_blank" rel="noopener" title="GitHub repository">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <p>A centralized web application designed to organize, store, and share web links efficiently. Features a clean UI for categorizing URLs into custom folders.</p>
+          <div><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+      </div>
+
+      <!-- TaskFlow Desktop App -->
+      <div class="col-md-6" data-tags="app">
+        <div class="card reveal">
+          <div class="preview p5">
+            <img src="static/assets/projects/taskflow.png"
+                 alt="TaskFlow Desktop App" loading="lazy">
+            <span class="preview-title">TaskFlow — Desktop Todo App</span>
+            <div class="preview-links">
+              <a class="icon-link" href="https://github.com/abhi2467/todo-list-desktop-app" target="_blank" rel="noopener" title="GitHub repository">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <p>A robust desktop application for managing daily tasks and to-dos with a clean, distraction-free interface. Built to help users stay productive offline.</p>
+          <div><span class="tag tag-accent">Python</span><span class="tag">Tkinter</span><span class="tag">SQLite</span></div>
+        </div>
+      </div>
+
+      <!-- Bharat Live -->
+      <div class="col-md-6" data-tags="fullstack web">
+        <div class="card reveal">
+          <div class="preview p6">
+            <img src="static/assets/projects/bharatlive.jpg"
+                 alt="Bharat Live" loading="lazy">
+            <span class="preview-title">Bharat Live</span>
+            <div class="preview-links">
+              <a class="icon-link" href="https://bharatlive-vomb.onrender.com/" target="_blank" rel="noopener" title="Live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="https://github.com/abhi2467/bharatlive" target="_blank" rel="noopener" title="GitHub repository">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <p>A dynamic web portal delivering live updates, news, and regional information across India. Focuses on real-time content delivery and a responsive layout.</p>
+          <div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+      </div>
+
+      <!-- BalaiJi Sweet Store -->
+      <div class="col-md-6" data-tags="fullstack">
+        <div class="card reveal">
+          <div class="preview p4">
+            <img src="static/assets/projects/balaji-sweets.jpg"
+                 alt="BalaiJi Sweet Store" loading="lazy">
+            <span class="preview-title">BalaiJi Sweet Store</span>
+            <div class="preview-links">
+              <a class="icon-link" href="https://23abhinavchauhan.pythonanywhere.com/" target="_blank" rel="noopener" title="Live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="https://github.com/abhi2467" target="_blank" rel="noopener" title="GitHub repository">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <p>A small-business web app for a sweet shop, built with a focus on simple product browsing and a deployable, production-ready setup.</p>
+          <div><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATES ===================== -->
+  <section id="certificates">
+    <div class="section-head reveal">
+      <h2>Certifications</h2>
+      <p>Proof of the learning — internship training, skill certifications and coursework I've completed. </p>
+    </div>
+
+    <div class="cert-grid">
+
+      <!-- Certificate 1 — Full Stack Developer (One Roadmap) -->
+      <article class="cert-card reveal">
+        <button class="cert-thumb" type="button"
+                data-img="static/assets/certificates/oneroadmap-full-stack-developer.jpg"
+                data-title="Full Stack Developer — One Roadmap Skill Certification"
+                aria-label="View Full Stack Developer certificate from One Roadmap">
+          <img src="static/assets/certificates/oneroadmap-full-stack-developer.jpg"
+               alt="Full Stack Developer certificate of achievement issued by One Roadmap to Abhinav Chauhan"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23171b24%22/%3E%3Ctext x=%22400%22 y=%22305%22 fill=%22%23d9a84c%22 font-family=%22sans-serif%22 font-size=%2232%22 text-anchor=%22middle%22%3ECertificate image%3C/text%3E%3C/svg%3E'">
+          <span class="cert-zoom"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>
+        </button>
+        <div class="cert-body">
+          <span class="status-pill live"><span class="dot-mini"></span> Completed</span>
+          <h3>Full Stack Developer — Skill Certification</h3>
+          <div class="cert-org">One Roadmap · Signed by Gaurav Ghai, CEO &amp; Founder</div>
+          <p>Passed the One Roadmap Skill Certification Test in Full Stack Developer, covering end-to-end web development — from responsive frontends to server-side logic and databases.</p>
+          <div><span class="tag tag-accent">Full Stack</span><span class="tag">Web Development</span><span class="tag">Certification</span></div>
+        </div>
+      </article>
+
+      <!-- Certificate 2 — VaultofCodes 
+      <article class="cert-card reveal">
+        <button class="cert-thumb" type="button"
+                data-img="static/assets/certificates/vaultofcodes-python-internship.jpg"
+                data-title="Python Programming Internship with Training — VaultofCodes"
+                aria-label="View Python Programming Internship certificate from VaultofCodes">
+          <img src="static/assets/certificates/vaultofcodes-python-internship.jpg"
+               alt="Python Programming Internship with Training certificate issued by VaultofCodes"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23171b24%22/%3E%3Ctext x=%22400%22 y=%22305%22 fill=%22%23d9a84c%22 font-family=%22sans-serif%22 font-size=%2232%22 text-anchor=%22middle%22%3ECertificate image%3C/text%3E%3C/svg%3E'">
+          <span class="cert-zoom"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>
+        </button>
+        <div class="cert-body">
+          <span class="status-pill live"><span class="dot-mini"></span> Completed</span>
+          <h3>Python Programming Internship with Training</h3>
+          <div class="cert-org">VaultofCodes</div>
+          <p>Structured hands-on training covering Python fundamentals, object-oriented programming and practical project delivery.</p>
+          <div><span class="tag tag-accent">Python</span><span class="tag">OOP</span><span class="tag">Internship</span></div>
+        </div>
+      </article>-->
+
+      <!-- Certificate 3 — Saylor University -->
+      <article class="cert-card reveal">
+        <button class="cert-thumb" type="button"
+                data-img="static/assets/certificates/saylor-cs250-python-data-science.jpg"
+                data-title="CS250: Python for Data Science — Saylor University"
+                aria-label="View CS250 Python for Data Science certificate from Saylor University">
+          <img src="static/assets/certificates/saylor-cs250-python-data-science.jpg"
+               alt="CS250 Python for Data Science certificate issued by Saylor University"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23171b24%22/%3E%3Ctext x=%22400%22 y=%22305%22 fill=%22%23d9a84c%22 font-family=%22sans-serif%22 font-size=%2232%22 text-anchor=%22middle%22%3ECertificate image%3C/text%3E%3C/svg%3E'">
+          <span class="cert-zoom"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>
+        </button>
+        <div class="cert-body">
+          <span class="status-pill live"><span class="dot-mini"></span> Completed</span>
+          <h3>CS250: Python for Data Science</h3>
+          <div class="cert-org">Saylor University</div>
+          <p>Coursework in Python for data handling, analysis and visualisation — the foundation behind my AI and data-driven projects.</p>
+          <div><span class="tag tag-accent">Python</span><span class="tag">Data Science</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="section-head reveal">
+      <h2>A little about me</h2>
+      <p>Get to know what I build and what drives me.</p>
+    </div>
+
+    <div class="about-stats reveal">
+      <div class="stat-box"><strong data-count="6" data-suffix="+">6+</strong><span>Projects</span></div>
+      <div class="stat-box"><strong data-count="3">3</strong><span>Certifications</span></div>
+      <div class="stat-box"><strong data-count="7.96">7.96</strong><span>BCA CGPA</span></div>
+      <div class="stat-box"><strong>2025</strong><span>MCA started</span></div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card reveal">
+          <h3><i class="fa-solid fa-route" style="color:var(--accent);margin-right:8px;" aria-hidden="true"></i>My journey</h3>
+          <p>Studying MCA at Teerthanker Mahaveer University after completing my BCA there, while developing practical software and web skills along the way.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card reveal">
+          <h3><i class="fa-solid fa-cubes" style="color:var(--accent);margin-right:8px;" aria-hidden="true"></i>What I build</h3>
+          <p>Responsive, database-driven websites and full-stack projects, handling both frontend presentation and backend logic.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card reveal">
+          <h3><i class="fa-solid fa-bolt" style="color:var(--accent);margin-right:8px;" aria-hidden="true"></i>What drives me</h3>
+          <p>Learning continuously, solving real problems, and explaining technical solutions in simple, clear language.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head reveal">
+      <h2>Tools of my trade</h2>
+    </div>
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-md-3">
+        <div class="skill-box reveal">
+          <div class="skill-head">
+            <span class="skill-ico"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+            <h4>Frontend</h4>
+          </div>
+          <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="skill-box reveal">
+          <div class="skill-head">
+            <span class="skill-ico"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
+            <h4>Backend</h4>
+          </div>
+          <span class="pill">PHP</span><span class="pill">Python</span><span class="pill">Java</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="skill-box reveal">
+          <div class="skill-head">
+            <span class="skill-ico"><i class="fa-solid fa-database" aria-hidden="true"></i></span>
+            <h4>Databases</h4>
+          </div>
+          <span class="pill">MySQL</span><span class="pill">SQL</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="skill-box reveal">
+          <div class="skill-head">
+            <span class="skill-ico"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>
+            <h4>Tools</h4>
+          </div>
+          <span class="pill">GitHub</span><span class="pill">Git</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head reveal">
+      <h2>Learning by doing</h2>
+    </div>
+    <div class="tl">
+      <div class="tl-item reveal">
+        <div class="tl-kicker">Experience</div>
+        <h4>Python Programming Intern</h4>
+        <div class="org">VaultofCodes</div>
+        <p>Completed structured hands-on training in Python and object-oriented programming, delivering small projects and tasks that strengthened problem-solving and logical thinking.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-kicker">Education</div>
+        <h4>Master of Computer Applications</h4>
+        <div class="org">Teerthanker Mahaveer University · 2025 – Present</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-kicker">Education</div>
+        <h4>Bachelor of Computer Applications</h4>
+        <div class="org">Teerthanker Mahaveer University · 2022 – 2025 · CGPA 7.96</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-kicker">Certifications</div>
+        <h4>Full Stack Developer — Skill Certification</h4>
+        <div class="org">One Roadmap</div>
+        <p>Passed the One Roadmap Skill Certification Test in Full Stack Developer, validating end-to-end web development skills.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-kicker">Certifications</div>
+        <h4>Python Programming Internship with Training</h4>
+        <div class="org">VaultofCodes</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-kicker">Certifications</div>
+        <h4>CS250: Python for Data Science</h4>
+        <div class="org">Saylor University</div>
+      </div>
+    </div>
+
+    <!-- ===== Résumé banner ===== -->
+    <div class="resume-banner reveal">
+      <div class="resume-copy">
+        <h3><i class="fa-regular fa-file-lines" aria-hidden="true"></i> Want the full picture?</h3>
+        <p>Grab a one-page PDF with my education, projects, skills and certifications.</p>
+      </div>
+      <div class="resume-actions">
+        <a class="btn-accent" href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" target="_blank" rel="noreferrer" download>
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download resume
+        </a>
+        <a class="btn-ghost" href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-regular fa-eye" aria-hidden="true"></i> View online
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="section-head reveal">
+      <h2>Have something in mind? Let's talk.</h2>
+      <p>I'm always interested in learning, connecting and exploring new opportunities.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-5">
+        <div class="contact-card h-100 reveal">
+          <a class="contact-link" href="mailto:rajputabhinav4163@gmail.com">
+            <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+            rajputabhinav4163@gmail.com
+          </a>
+          <a class="contact-link" href="tel:+918755019772">
+            <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+            +91 87550 19772
+          </a>
+          <a class="contact-link" href="https://github.com/abhi2467" target="_blank" rel="noopener">
+            <span class="contact-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+            GitHub
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/abhinav-chauhan-mca-student" target="_blank" rel="noopener">
+            <span class="contact-icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
+            LinkedIn
+          </a>
+          <a class="contact-link" href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" target="_blank" rel="noreferrer" download>
+            <span class="contact-icon"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i></span>
+            Download resume
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="contact-card reveal">
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="cName">Your name</label>
+                <input type="text" class="form-control" id="cName" required autocomplete="name">
+              </div>
+              <div class="col-md-6">
+                <label for="cEmail">Your email</label>
+                <input type="email" class="form-control" id="cEmail" required autocomplete="email">
+              </div>
+              <div class="col-12">
+                <label for="cSubject">Subject</label>
+                <input type="text" class="form-control" id="cSubject">
+              </div>
+              <div class="col-12">
+                <label for="cMsg">Your message</label>
+                <textarea class="form-control" id="cMsg" rows="4" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-accent w-100" style="border-radius:12px;justify-content:center;">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send message
+                </button>
+                <p id="formNote" class="mt-3 mb-0" style="color:var(--text-dim);font-size:.85rem;" aria-live="polite"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <a href="#home" class="brand">abhinav</a>
+    <div class="foot-links">
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="static/assets/resume/Abhinav_Chauhan_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </div>
+    <p class="foot-note">© <span id="yr"></span> Abhinav Chauhan.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top" title="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close preview">
+    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+  </button>
+  <figure class="lb-figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCap"></figcaption>
+  </figure>
+</div>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+<!-- Portfolio JavaScript -->
+<script src="static/js/main.js" defer></script>
+
+</body>
+</html>
